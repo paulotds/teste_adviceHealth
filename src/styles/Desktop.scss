@@ -1,0 +1,45 @@
+.desktop{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+
+    .content{
+        padding-right: 20px;
+
+      
+    }
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        h2{
+            font-size: 1.3rem;
+            font-weight: 900;
+        }
+
+        .search{
+            p{
+                font-weight: 500;
+                color: #9291a3;
+            }
+        }
+    }
+
+    .table1{
+        margin-top: 2rem;
+        h2{
+            font-size: 1.3rem;
+            font-weight: 900;
+            margin-bottom: 17px;
+        }
+    }
+
+    .widgets{
+        padding: 0 1.5rem;
+        position: relative;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
