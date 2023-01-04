@@ -13,11 +13,13 @@ export default function TableHome() {
   }
 
   return (
-    <Table>
+    <div className="tabela">
+      <Table>
       <thead className="topo">
         <tr>
           <th>Cliente</th>
           <th>Protocolo</th>
+          <th>E-mail</th>
           <th>Data</th>
           <th>Status</th>
         </tr>
@@ -27,6 +29,7 @@ export default function TableHome() {
           <tr key={agenda.id}>
             <td>{agenda.userName}</td>
             <td>{agenda.protocolo}</td>
+            <td>{agenda.userEmail}</td>
             <td>{agenda.dataAgendamento}</td>
             <td><small className={statusAgendamento[agenda.status]}>{agenda.status}</small></td>
           </tr>
@@ -34,5 +37,6 @@ export default function TableHome() {
         )}
       </tbody>
     </Table>
+    </div>
   );
 }

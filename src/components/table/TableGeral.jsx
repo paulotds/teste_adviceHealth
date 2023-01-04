@@ -7,6 +7,12 @@ import EditPanel from '../EditPanel/EditPanel';
 
 export default function TableGeral() {
 
+  const statusAgendamento = {
+    pendente: 'pendent',
+    cancelado: 'failed',
+    confirmado: 'success'
+  }
+
   const { agendamentos, setAgendamentos } = useContext(AppContext);
   const [modalShow, setModalShow] = useState(false);
   const [editarAgenda, setEditarAgenda] = useState(null);
@@ -55,7 +61,7 @@ export default function TableGeral() {
           
             <th>Paciente</th>
             <th>Protocolo</th>
-            <th>E-mail</th>
+            <th>CPF</th>
             <th>Data</th>
             <th>Status</th>
             <th>Ações</th>
@@ -67,9 +73,10 @@ export default function TableGeral() {
               <tr key={agenda.id}>
                 <td>{agenda.userName}</td>
                 <td>{agenda.protocolo}</td>
-                <td>{agenda.userEmail}</td>
+                <td>{agenda.userCpf}</td>
                 <td>{agenda.dataAgendamento}</td>
-                <td>{agenda.status}</td>
+  
+                <td><small className={statusAgendamento[agenda.status]}>{agenda.status}</small></td>
                 <td className="action">
                   <button className="edit" onClick={() => abrirModal(agenda)} href=""><PencilSquare /></button>
                   <button className="remove" onClick={e => removerAgenda(agenda.id)} href=""><TrashFill /></button>

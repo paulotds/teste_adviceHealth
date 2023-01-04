@@ -2,30 +2,50 @@
     background-color: #fff;
     border-radius: 15px;
     padding: 1rem;
-    overflow-y: scroll !important;
     height: 100%;
     .topo{
         background-color: #e5e9fa;
-        tr:nth-child(1){
-            
-            th:first-child{
-                border-top-left-radius: 15px !important;
-            }
-            th:last-child{
-                border-top-right-radius: 15px !important;
-            }
-        }
+        
     }
     tbody{
         color: #999aae;
+        overflow-y: scroll;
+
+        .success{
+            background-color: #20c997;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 900;
+            padding: 6px;
+            font-size: 0.7rem;
+        }
+        .pendent{
+            background-color: #ffdd76;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 900;
+            padding: 6px;
+            font-size: 0.7rem;
+        }
+        .failed{
+            background-color: #f95f6d;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 900;
+            padding: 6px;
+            font-size: 0.7rem;
+        }
 
         .action{
             display: flex;
             justify-content: center;
 
-            a{
+            button{
                 margin: 0 5px;
-                font-size: 17px;
+                font-size: 15px;
+                background-color: transparent;
+                border: none;
+                
             }
 
             .edit{
@@ -66,5 +86,5 @@
     }
 }
 .table>:not(caption)>*>*{
-    padding: 13px 1.3rem !important;
+    padding: 18px 1.3rem !important;
 }

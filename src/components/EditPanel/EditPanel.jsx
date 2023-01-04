@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { LoadMedicos } from '../../data/LoadMedicos';
 import {AppContext} from '../../Contextos/Context';
+import './EditPanel.scss';
 
 export default function EditPanel({show, onHide, agenda}) {
     const listaMedicos = LoadMedicos();

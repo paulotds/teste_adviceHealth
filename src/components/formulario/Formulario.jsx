@@ -55,20 +55,29 @@ export default function Formulario() {
                     <Form.Label>Nome completo</Form.Label>
                     <Form.Control type="text" placeholder="Digite aqui" required />
                     <Form.Control.Feedback type="invalid">
-                        Please choose a username.
+                        Por favor, insira um nome válido.
                     </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="email">
                     <Form.Label>E-mail</Form.Label>
                     <Form.Control type="email" placeholder="Digite aqui" required />
+                    <Form.Control.Feedback type="invalid">
+                        Por favor, insira um e-mail válido.
+                    </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="cpf">
                     <Form.Label>CPF</Form.Label>
                     <Form.Control type="text" placeholder="Digite aqui" required />
+                    <Form.Control.Feedback type="invalid">
+                        Por favor, insira um CPF válido.
+                    </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="data">
                     <Form.Label>Data da consulta</Form.Label>
                     <Form.Control type="date" placeholder="Enter email" required />
+                    <Form.Control.Feedback type="invalid">
+                        Por favor, insira uma data.
+                    </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="especialidade">
                     <Form.Label>Especialidade</Form.Label>

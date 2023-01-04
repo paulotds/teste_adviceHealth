@@ -6,6 +6,7 @@ import Formulario from '../components/formulario/Formulario'
 import TableGeral from '../components/table/TableGeral';
 import { useContext } from 'react';
 import { AppContext } from '../Contextos/Context';
+import DateToday from '../components/date/Date';
 
 export default function Desktop() {
     
@@ -17,11 +18,7 @@ export default function Desktop() {
             <div className="content">
                 <div className="title">
                     <h2>Agendamento de consultas</h2>
-                    <div className="search">
-                        <p>{
-                         new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'long', year: 'numeric'} ).format(showDate)
-                        }</p>
-                    </div>
+                    <DateToday />
                 </div>
                 <Formulario />
                 <div className="title agenda">

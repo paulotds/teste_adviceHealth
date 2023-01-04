@@ -4,6 +4,7 @@ import Calendar from '../components/calendar/Calendar';
 import Medicos from '../components/medicos/Medicos';
 import Formulario from '../components/formulario/Formulario'
 import TableGeral from '../components/table/TableGeral';
+import DateToday from '../components/date/Date';
 
 export default function Desktop() {
     const onChange = (date) => {
@@ -14,9 +15,7 @@ export default function Desktop() {
             <div className="content">
                 <div className="title">
                     <h2>Consulta de agendamentos</h2>
-                    <div className="search">
-                        <p>02 Jan 2023, Segunda-feira</p>
-                    </div>
+                    <DateToday />
                 </div>
                 <div className="tabelaGeral">
                 <TableGeral />

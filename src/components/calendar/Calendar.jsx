@@ -7,6 +7,10 @@ import { AppContext } from '../../Contextos/Context';
 export default function Calendar() {
     const { setData, agendamentos, setAgendamentos } = useContext(AppContext);
 
+    function refreshPage() {
+        window.location.reload(false);
+      }
+
     function updateDate(e){
         e.preventDefault();
         setData(e.target.elements.selectedDate.value);
@@ -25,9 +29,15 @@ export default function Calendar() {
                     <Form.Label>Selecione uma data</Form.Label>
                     <Form.Control type="date" />
                 </Form.Group>
-                <Button className="btn-calendar" variant="primary" type="submit">
-                    Confirmar
-                </Button>
+                <div className="buttons">
+                    <Button className="btn-reload" type="button" onClick={refreshPage}>
+                        Atualizar
+                    </Button>
+                    <Button className="btn-calendar" variant="primary" type="submit">
+                        Buscar
+                    </Button>
+                    </div>
+                    
             </Form>
         </div>
     )

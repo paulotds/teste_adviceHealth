@@ -11,33 +11,35 @@
         margin-bottom: 7px;
     }
 
-        /* width */
+                /* width */
         ::-webkit-scrollbar {
             width: 9px;
             margin: 1rem 0;
             height: 60%;
         }
-        
+
         /* Track */
         ::-webkit-scrollbar-track {
-            background: transparent !important;
+            background: #ccc !important;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
             padding: 1rem 0;
         }
-        
+
         /* Handle */
         ::-webkit-scrollbar-thumb {
             background:#a4b1bf;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
         }
-        
+
         /* Handle on hover */
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
 
     .agendaGeral{
-        height: 315px;
+        height: 300px;
         overflow-y: scroll;
         border-radius: 15px;
 

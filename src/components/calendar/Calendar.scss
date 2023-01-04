@@ -8,6 +8,12 @@ form{
             color: #ccc !important;
         }
     }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
     .btn-calendar{
         width: 100%;
         border-radius: 12px;
@@ -17,6 +23,18 @@ form{
         &:hover{
             background-color: #5e60ef;
             color: #fff !important;
+        }
+    }
+    .btn-reload{
+        width: 100%;
+        border-radius: 12px;
+        height: 50px;
+        background-color: #b6b6c6;
+        border: 0px;
+
+        &:hover{
+            filter: brightness(0.95);
+            background-color: #b6b6c6;
         }
     }
 }

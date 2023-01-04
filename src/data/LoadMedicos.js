@@ -11,26 +11,32 @@ export const LoadMedicos = () => {
         {
             id: uuid(),
             name: 'Dr. Pedro',
-            role: 'Dermatologia',
-            imgUrl: '/medica.png'
+            role: 'Neurologia',
+            imgUrl: '/medico2.png'
         }, 
         {
             id: uuid(),
             name: 'Dra. Amanda',
-            role: 'Dermatologia',
-            imgUrl: '/medica.png'
+            role: 'Pediatria',
+            imgUrl: '/medica4.png'
         }, 
         {
             id: uuid(),
-            name: '4 Dra. Jéssica Alves',
-            role: 'Dermatologia',
-            imgUrl: '/medica.png'
+            name: 'Dr. Marco',
+            role: 'Cardiologia',
+            imgUrl: '/medico3.png'
         }, 
         {
             id: uuid(),
-            name: '5 Dra. Jéssica Alves',
-            role: 'Dermatologia',
-            imgUrl: '/medica.png'
+            name: 'Dr. Robson',
+            role: 'Clinico Geral',
+            imgUrl: '/medico7.png'
+        }, 
+        {
+            id: uuid(),
+            name: 'Dr. Alexandre',
+            role: 'Ginecologia',
+            imgUrl: '/medico5.png'
         }, 
     ]
 }
