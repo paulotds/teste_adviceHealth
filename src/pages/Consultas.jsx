@@ -1,10 +1,9 @@
 import '../styles/Agendamento.scss';
-import SearchBar from '../components/searchBar/SearchBar';
 import Calendar from '../components/calendar/Calendar';
 import Medicos from '../components/medicos/Medicos';
-import Formulario from '../components/formulario/Formulario'
 import TableGeral from '../components/table/TableGeral';
 import DateToday from '../components/date/Date';
+import '../styles/Consultas.scss';
 
 export default function Desktop() {
     const onChange = (date) => {
